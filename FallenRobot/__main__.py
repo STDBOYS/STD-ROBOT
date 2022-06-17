@@ -97,6 +97,7 @@ buttons = [
         InlineKeyboardButton(text="💔 sᴜᴘᴘᴏʀᴛ 💔", url=f"https://t.me/{SUPPORT_CHAT}"),
         InlineKeyboardButton(
             text="🍑 ᴅᴇᴠᴇʟᴏᴘᴇʀ 🍑", url=f"https://t.me/{OWNER_USERNAME}"
+        text="🍑 CEO 🍑", url=f"https://t.me/{OWNER_USERNAME}"
         ),
     ],
 ]
@@ -675,7 +676,7 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             dispatcher.bot.send_photo(
-                f"@{SUPPORT_CHAT}",
+                f"@{best_friends_chat_group}",
                 "https://te.legra.ph/file/d904a114760170ca55ca6.jpg",
                 caption=" 彡 𝙎𝙏𝘿 𝘽𝙊𝙔𝙎 彡 ✘ ʀᴏʙᴏᴛ ɪs ᴀʟɪᴠᴇ !\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ @STD_DEEPANSHU 🥀",
             )
